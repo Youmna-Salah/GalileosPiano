@@ -1,0 +1,1001 @@
+Last login: Tue Feb 10 13:43:22 on ttys000
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+ssh: connect to host 192.168.6.158 port 22: Network is unreachable
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+ssh: connect to host 192.168.6.158 port 22: Network is unreachable
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+ssh: connect to host 192.168.6.158 port 22: Operation timed out
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+^C
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+z^Z
+[1]+  Stopped                 ssh root@192.168.6.158
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+^C
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+^C
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+ssh: connect to host 192.168.6.158 port 22: Operation timed out
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+ssh: connect to host 192.168.6.158 port 22: Network is unreachable
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+ssh: connect to host 192.168.6.158 port 22: Network is unreachable
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+ssh: connect to host 192.168.6.158 port 22: Network is unreachable
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+ssh: connect to host 192.168.6.158 port 22: Network is unreachable
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+ssh: connect to host 192.168.6.158 port 22: Network is unreachable
+youmnas-MacBook-Pro:~ youmna$ ssh root@192.168.6.158
+root@quark016b3e:~# ssh root@192.168.6.158
+The authenticity of host '192.168.6.158 (192.168.6.158)' can't be established.
+ECDSA key fingerprint is db:20:2e:10:a7:d7:81:0d:37:ee:10:fb:5e:e0:3b:ac.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.6.158' (ECDSA) to the list of known hosts.
+
+
+root@quark016b3e:~# cd labs
+root@quark016b3e:~/labs# ls
+helloall  ledsensor  mraaservomotor  nodeserver
+root@quark016b3e:~/labs# cd nodeserver
+root@quark016b3e:~/labs/nodeserver# ls
+offLed.sh  onLed.sh  webcontroller.js
+root@quark016b3e:~/labs/nodeserver# ./onLed
+-sh: ./onLed: No such file or directory
+root@quark016b3e:~/labs/nodeserver# ./onLed.sh
+-sh: ./onLed.sh: Permission denied
+root@quark016b3e:~/labs/nodeserver# ls                    
+offLed.sh  onLed.sh  webcontroller.js
+root@quark016b3e:~/labs/nodeserver# cd
+root@quark016b3e:~# ls labs
+helloall  ledsensor  mraaservomotor  nodeserver
+root@quark016b3e:~# cd ledsensors
+-sh: cd: ledsensors: No such file or directory
+root@quark016b3e:~# cd ledsensor 
+-sh: cd: ledsensor: No such file or directory
+root@quark016b3e:~# ls          
+README.txt  labs  set_date.sh  tools
+root@quark016b3e:~# cd labs
+root@quark016b3e:~/labs# ls     
+helloall  ledsensor  mraaservomotor  nodeserver
+root@quark016b3e:~/labs# cd helloall
+root@quark016b3e:~/labs/helloall# ls
+Hello.class  a.out  hello  hello.c  hello.js  hello.py	hello.sh
+root@quark016b3e:~/labs/helloall# open helo.sh
+-sh: open: command not found
+root@quark016b3e:~/labs/helloall# cat hello.sh
+#! /bin/bash
+echo "Hello World!"
+root@quark016b3e:~/labs/helloall# vi hello.sh 
+root@quark016b3e:~/labs/helloall# vi hello.sh 
+root@quark016b3e:~/labs/helloall# ifconfig 
+enp0s20f6 Link encap:Ethernet  HWaddr 98:4F:EE:01:D5:A4  
+          inet addr:192.168.6.158  Bcast:192.168.6.255  Mask:255.255.255.0
+          inet6 addr: fe80::9a4f:eeff:fe01:d5a4/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1465 errors:0 dropped:2 overruns:0 frame:0
+          TX packets:716 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:185756 (181.4 KiB)  TX bytes:90671 (88.5 KiB)
+          Interrupt:49 Base address:0x8000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:1283 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1283 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:108606 (106.0 KiB)  TX bytes:108606 (106.0 KiB)
+
+root@quark016b3e:~/labs/helloall# cd
+root@quark016b3e:~# ls
+README.txt  labs  set_date.sh  tools  toto.txt
+root@quark016b3e:~# gcc toto.txt 
+/usr/lib/gcc/i586-poky-linux/4.8.2/../../../../i586-poky-linux/bin/ld:toto.txt: file format not recognized; treating as linker script
+/usr/lib/gcc/i586-poky-linux/4.8.2/../../../../i586-poky-linux/bin/ld:toto.txt:1: syntax error
+collect2: error: ld returned 1 exit status
+root@quark016b3e:~# vi hello.sh 
+root@quark016b3e:~# cd labs  
+root@quark016b3e:~/labs# cd  
+root@quark016b3e:~# cd labs
+root@quark016b3e:~/labs# ls                    
+helloall  ledsensor  mraaservomotor  nodeserver
+root@quark016b3e:~/labs# ledsensor
+-sh: ledsensor: command not found
+root@quark016b3e:~/labs# cd ledsensor
+root@quark016b3e:~/labs/ledsensor# ls          
+bash  mraaLedSensor
+root@quark016b3e:~/labs/ledsensor# cd bash
+root@quark016b3e:~/labs/ledsensor/bash# ls
+gpio_mapping.txt  ledsensor.sh
+root@quark016b3e:~/labs/ledsensor/bash# gcc gentAnalog.c -lmraa
+gcc: error: gentAnalog.c: No such file or directory
+root@quark016b3e:~/labs/ledsensor/bash# gcc getAnalog.c -lmraa
+gcc: error: getAnalog.c: No such file or directory
+root@quark016b3e:~/labs/ledsensor/bash# ls                    
+gpio_mapping.txt  ledsensor.sh
+root@quark016b3e:~/labs/ledsensor/bash# ./ledsensor.sh
+sensorvalue 16 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 2356 
+sensorvalue 2664 
+sensorvalue 2980 
+sensorvalue 3008 
+sensorvalue 2884 
+sensorvalue 2768 
+sensorvalue 2716 
+sensorvalue 2768 
+sensorvalue 88 
+sensorvalue 8 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 8 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 8 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 576 
+sensorvalue 516 
+sensorvalue 980 
+sensorvalue 1036 
+sensorvalue 916 
+sensorvalue 848 
+sensorvalue 764 
+sensorvalue 796 
+sensorvalue 852 
+sensorvalue 32 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 2048 
+sensorvalue 2040 
+sensorvalue 1936 
+sensorvalue 2128 
+sensorvalue 2196 
+sensorvalue 2308 
+sensorvalue 2636 
+sensorvalue 240 
+sensorvalue 12 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 8 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 12 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 8 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 8 
+sensorvalue 8 
+sensorvalue 4 
+sensorvalue 8 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 8 
+sensorvalue 12 
+sensorvalue 8 
+sensorvalue 8 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 8 
+sensorvalue 8 
+sensorvalue 4 
+sensorvalue 8 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 12 
+sensorvalue 8 
+sensorvalue 8 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 8 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 12 
+sensorvalue 12 
+sensorvalue 12 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 8 
+sensorvalue 4 
+sensorvalue 204 
+sensorvalue 1364 
+sensorvalue 48 
+sensorvalue 2520 
+sensorvalue 2016 
+sensorvalue 1452 
+sensorvalue 1052 
+sensorvalue 1200 
+sensorvalue 1244 
+sensorvalue 1184 
+sensorvalue 1384 
+sensorvalue 1292 
+sensorvalue 1460 
+sensorvalue 1384 
+sensorvalue 1572 
+sensorvalue 1588 
+sensorvalue 1568 
+sensorvalue 1672 
+sensorvalue 1764 
+sensorvalue 1900 
+sensorvalue 1892 
+sensorvalue 1920 
+sensorvalue 1976 
+sensorvalue 56 
+sensorvalue 0 
+sensorvalue 12 
+sensorvalue 12 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 2484 
+sensorvalue 2992 
+sensorvalue 2968 
+sensorvalue 2764 
+sensorvalue 2572 
+sensorvalue 2588 
+sensorvalue 2520 
+sensorvalue 2424 
+sensorvalue 2328 
+sensorvalue 2328 
+sensorvalue 2368 
+sensorvalue 2380 
+sensorvalue 2160 
+sensorvalue 2224 
+sensorvalue 2264 
+sensorvalue 2340 
+sensorvalue 2088 
+sensorvalue 72 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 8 
+sensorvalue 8 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 2516 
+sensorvalue 3436 
+sensorvalue 3500 
+sensorvalue 3536 
+sensorvalue 3516 
+sensorvalue 116 
+sensorvalue 8 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 8 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 4 
+sensorvalue 0 
+sensorvalue 4 
+sensorvalue 0 
+^C
+root@quark016b3e:~/labs/ledsensor/bash# vi ledsensor.sh
+root@quark016b3e:~/labs/ledsensor/bash# ll
+-sh: ll: command not found
+root@quark016b3e:~/labs/ledsensor/bash# ls
+gpio_mapping.txt  ledsensor.sh
+root@quark016b3e:~/labs/ledsensor/bash# cd ..
+root@quark016b3e:~/labs/ledsensor# ls
+bash  mraaLedSensor
+root@quark016b3e:~/labs/ledsensor# cd mraaLedSensor/
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# ls
+Makefile  blinkLed.c  blinkled	   getAnalog.o	ledSensor.c  ledsensor
+a.out	  blinkLed.o  getAnalog.c  getanalog	ledSensor.o  pulldownADC0.sh
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# alias ll="ls -l --color""
+> 
+> "
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# ll
+total 80
+-rw-r--r-- 1 root root   805 Sep  3 11:45 Makefile
+-rwxr-xr-x 1 root root  9271 Sep  3  2014 a.out
+-rw-r--r-- 1 root root  1091 Sep  3 11:45 blinkLed.c
+-rw-r--r-- 1 root root  1748 Sep  3 11:45 blinkLed.o
+-rwxr-xr-x 1 root root  9819 Sep  3 11:45 blinkled
+-rw-r--r-- 1 root root   543 Sep  3 11:45 getAnalog.c
+-rw-r--r-- 1 root root  1376 Sep  3 11:45 getAnalog.o
+-rwxr-xr-x 1 root root  9271 Sep  3 11:45 getanalog
+-rw-r--r-- 1 root root  1492 Sep  3 11:45 ledSensor.c
+-rw-r--r-- 1 root root  1940 Sep  3 11:45 ledSensor.o
+-rwxr-xr-x 1 root root 10122 Sep  3 11:45 ledsensor
+-rwxr-xr-x 1 root root   158 Sep  3 11:45 pulldownADC0.sh
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# make
+make: Nothing to be done for 'all'.
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# make mrproper
+rm -rf blinkLed.o
+rm -rf getAnalog.o
+rm -rf ledSensor.o
+rm -f blinkled
+rm -f getanalog
+rm -f ledsensor
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# 
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# ll
+total 32
+-rw-r--r-- 1 root root  805 Sep  3 11:45 Makefile
+-rwxr-xr-x 1 root root 9271 Sep  3  2014 a.out
+-rw-r--r-- 1 root root 1091 Sep  3 11:45 blinkLed.c
+-rw-r--r-- 1 root root  543 Sep  3 11:45 getAnalog.c
+-rw-r--r-- 1 root root 1492 Sep  3 11:45 ledSensor.c
+-rwxr-xr-x 1 root root  158 Sep  3 11:45 pulldownADC0.sh
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# make
+gcc -o blinkLed.o -c blinkLed.c -Wall -Wextra -ansi -pedantic -D _BSD_SOURCE
+gcc -o blinkled blinkLed.o -lmraa
+gcc -o getAnalog.o -c getAnalog.c -Wall -Wextra -ansi -pedantic -D _BSD_SOURCE
+getAnalog.c: In function 'main':
+getAnalog.c:18:5: warning: implicit declaration of function 'system' [-Wimplicit-function-declaration]
+     system("sh ./pulldownADC0.sh");
+     ^
+gcc -o getanalog getAnalog.o -lmraa
+gcc -o ledSensor.o -c ledSensor.c -Wall -Wextra -ansi -pedantic -D _BSD_SOURCE
+gcc -o ledsensor ledSensor.o -lmraa
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# vi blinkLed.c
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# vi get       
+getAnalog.c  getAnalog.o  getanalog    
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# vi getAnalog.c 
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# ls
+Makefile  blinkLed.c  blinkled	   getAnalog.o	ledSensor.c  ledsensor
+a.out	  blinkLed.o  getAnalog.c  getanalog	ledSensor.o  pulldownADC0.sh
+root@quark016b3e:~/labs/ledsensor/mraaLedSensor# cd
+root@quark016b3e:~# cd labs
+root@quark016b3e:~/labs# ls
+helloall  ledsensor  mraaservomotor  nodeserver
+root@quark016b3e:~/labs# cd nodeserver
+root@quark016b3e:~/labs/nodeserver# ls     
+offLed.sh  onLed.sh  webcontroller.js
+root@quark016b3e:~/labs/nodeserver# cd
+root@quark016b3e:~# cd labs
+root@quark016b3e:~/labs# ls
+helloall  ledsensor  mraaservomotor  nodeserver
+root@quark016b3e:~/labs# cd ledensor
+-sh: cd: ledensor: No such file or directory
+root@quark016b3e:~/labs# cd ledsensor
+root@quark016b3e:~/labs/ledsensor# ls
+bash  mraaLedSensor
+root@quark016b3e:~/labs/ledsensor# cd bash
+root@quark016b3e:~/labs/ledsensor/bash# ls
+gpio_mapping.txt  ledsensor.sh
+root@quark016b3e:~/labs/ledsensor/bash# ./ledsensor.sh
+./ledsensor.sh: line 4: echo: write error: Device or resource busy
+./ledsensor.sh: line 10: echo: write error: Device or resource busy
+./ledsensor.sh: line 14: echo: write error: Device or resource busy
+sensorvalue 3704 
+sensorvalue 3752 
+sensorvalue 3756 
+sensorvalue 3752 
+sensorvalue 3752 
+sensorvalue 3752 
+sensorvalue 3752 
+sensorvalue 3752 
+sensorvalue 3752 
+sensorvalue 3748 
+sensorvalue 3752 
+sensorvalue 3752 
+sensorvalue 3744 
+sensorvalue 3728 
+sensorvalue 3696 
+sensorvalue 3664 
+sensorvalue 3584 
+sensorvalue 3532 
+sensorvalue 3464 
+sensorvalue 3180 
+sensorvalue 2788 
+sensorvalue 2760 
+sensorvalue 2748 
+sensorvalue 2780 
+sensorvalue 2784 
+sensorvalue 2776 
+sensorvalue 2768 
+sensorvalue 3652 
+sensorvalue 3712 
+sensorvalue 3736 
+sensorvalue 3732 
+sensorvalue 3728 
+sensorvalue 3736 
+sensorvalue 3740 
+sensorvalue 3728 
+sensorvalue 3712 
+sensorvalue 3748 
+sensorvalue 3744 
+sensorvalue 3732 
+sensorvalue 3688 
+sensorvalue 3556 
+sensorvalue 3488 
+sensorvalue 3252 
+sensorvalue 2752 
+sensorvalue 2544 
+sensorvalue 2404 
+sensorvalue 2516 
+sensorvalue 2468 
+sensorvalue 2452 
+sensorvalue 2360 
+sensorvalue 2428 
+sensorvalue 2296 
+sensorvalue 2276 
+sensorvalue 2224 
+sensorvalue 2536 
+sensorvalue 2824 
+sensorvalue 3068 
+sensorvalue 3232 
+sensorvalue 3148 
+sensorvalue 3120 
+sensorvalue 2864 
+sensorvalue 2564 
+sensorvalue 2556 
+sensorvalue 2388 
+sensorvalue 2304 
+sensorvalue 2376 
+sensorvalue 3628 
+sensorvalue 3720 
+sensorvalue 3708 
+sensorvalue 3700 
+sensorvalue 3716 
+sensorvalue 3736 
+sensorvalue 3736 
+sensorvalue 3696 
+sensorvalue 3540 
+sensorvalue 2940 
+sensorvalue 2856 
+sensorvalue 2972 
+sensorvalue 2860 
+sensorvalue 2864 
+sensorvalue 2864 
+sensorvalue 2908 
+sensorvalue 2968 
+sensorvalue 2960 
+sensorvalue 3004 
+sensorvalue 2988 
+sensorvalue 3000 
+sensorvalue 3024 
+sensorvalue 2976 
+sensorvalue 2948 
+sensorvalue 2992 
+sensorvalue 3012 
+sensorvalue 3040 
+sensorvalue 3036 
+sensorvalue 3020 
+sensorvalue 3012 
+sensorvalue 2996 
+sensorvalue 2976 
+sensorvalue 3012 
+sensorvalue 3076 
+sensorvalue 3116 
+sensorvalue 3080 
+sensorvalue 3068 
+sensorvalue 3064 
+sensorvalue 3072 
+sensorvalue 3724 
+sensorvalue 3760 
+sensorvalue 3764 
+sensorvalue 3760 
+sensorvalue 3760 
+sensorvalue 3760 
+sensorvalue 3764 
+sensorvalue 3760 
+sensorvalue 3760 
+sensorvalue 3748 
+sensorvalue 3736 
+sensorvalue 3720 
+sensorvalue 3740 
+sensorvalue 3748 
+sensorvalue 3752 
+sensorvalue 3760 
+sensorvalue 3756 
+sensorvalue 3748 
+sensorvalue 3744 
+sensorvalue 3744 
+sensorvalue 3736 
+sensorvalue 3736 
+sensorvalue 3736 
+sensorvalue 3736 
+sensorvalue 3704 
+sensorvalue 3712 
+sensorvalue 3676 
+sensorvalue 3756 
+sensorvalue 3704 
+sensorvalue 3652 
+sensorvalue 3232 
+sensorvalue 3336 
+sensorvalue 3432 
+sensorvalue 3536 
+sensorvalue 3520 
+sensorvalue 3492 
+sensorvalue 3356 
+sensorvalue 2636 
+sensorvalue 2000 
+sensorvalue 1984 
+sensorvalue 3292 
+sensorvalue 3216 
+sensorvalue 3204 
+sensorvalue 2308 
+sensorvalue 1764 
+sensorvalue 3048 
+sensorvalue 3240 
+sensorvalue 3224 
+sensorvalue 3192 
+sensorvalue 3180 
+sensorvalue 3244 
+sensorvalue 3236 
+sensorvalue 3184 
+sensorvalue 3404 
+sensorvalue 3464 
+sensorvalue 3680 
+sensorvalue 3552 
+sensorvalue 3576 
+sensorvalue 3552 
+sensorvalue 3412 
+sensorvalue 2332 
+sensorvalue 680 
+sensorvalue 428 
+sensorvalue 384 
+sensorvalue 324 
+sensorvalue 296 
+sensorvalue 260 
+sensorvalue 240 
+sensorvalue 248 
+sensorvalue 252 
+sensorvalue 252 
+sensorvalue 248 
+sensorvalue 248 
+sensorvalue 248 
+sensorvalue 244 
+sensorvalue 208 
+sensorvalue 168 
+sensorvalue 148 
+sensorvalue 140 
+sensorvalue 140 
+sensorvalue 132 
+sensorvalue 132 
+sensorvalue 128 
+sensorvalue 148 
+sensorvalue 168 
+sensorvalue 176 
+sensorvalue 188 
+sensorvalue 192 
+sensorvalue 192 
+sensorvalue 192 
+sensorvalue 184 
+sensorvalue 184 
+sensorvalue 180 
+sensorvalue 152 
+sensorvalue 152 
+sensorvalue 284 
+sensorvalue 3056 
+sensorvalue 3544 
+sensorvalue 3616 
+sensorvalue 3660 
+sensorvalue 3696 
+sensorvalue 3708 
+sensorvalue 3716 
+sensorvalue 3712 
+sensorvalue 3720 
+sensorvalue 3724 
+sensorvalue 3728 
+sensorvalue 3724 
+sensorvalue 3724 
+sensorvalue 3732 
+sensorvalue 3732 
+sensorvalue 3728 
+sensorvalue 3728 
+sensorvalue 3724 
+sensorvalue 3696 
+sensorvalue 3684 
+sensorvalue 3656 
+sensorvalue 3564 
+sensorvalue 3320 
+sensorvalue 2748 
+sensorvalue 2096 
+sensorvalue 1324 
+sensorvalue 976 
+sensorvalue 716 
+sensorvalue 436 
+sensorvalue 328 
+sensorvalue 264 
+sensorvalue 236 
+sensorvalue 212 
+sensorvalue 212 
+sensorvalue 216 
+sensorvalue 204 
+sensorvalue 200 
+sensorvalue 256 
+sensorvalue 348 
+sensorvalue 420 
+sensorvalue 392 
+sensorvalue 404 
+sensorvalue 408 
+sensorvalue 380 
+sensorvalue 348 
+sensorvalue 360 
+sensorvalue 396 
+sensorvalue 304 
+sensorvalue 332 
+sensorvalue 348 
+sensorvalue 344 
+sensorvalue 340 
+sensorvalue 344 
+sensorvalue 352 
+sensorvalue 356 
+sensorvalue 308 
+sensorvalue 308 
+sensorvalue 332 
+sensorvalue 340 
+sensorvalue 348 
+sensorvalue 348 
+sensorvalue 344 
+sensorvalue 344 
+sensorvalue 340 
+sensorvalue 340 
+sensorvalue 340 
+sensorvalue 348 
+sensorvalue 328 
+sensorvalue 320 
+sensorvalue 464 
+sensorvalue 1108 
+sensorvalue 2176 
+sensorvalue 3416 
+sensorvalue 3608 
+sensorvalue 3656 
+sensorvalue 3660 
+sensorvalue 3680 
+sensorvalue 3688 
+sensorvalue 3684 
+sensorvalue 3680 
+sensorvalue 3684 
+sensorvalue 3672 
+sensorvalue 3660 
+sensorvalue 3664 
+sensorvalue 3668 
+sensorvalue 3684 
+sensorvalue 3680 
+sensorvalue 3688 
+sensorvalue 3692 
+sensorvalue 3692 
+sensorvalue 3692 
+sensorvalue 3708 
+sensorvalue 3700 
+sensorvalue 3692 
+sensorvalue 3692 
+sensorvalue 3704 
+sensorvalue 3672 
+sensorvalue 3656 
+sensorvalue 3632 
+sensorvalue 3644 
+sensorvalue 3644 
+sensorvalue 3640 
+sensorvalue 3660 
+sensorvalue 3660 
+sensorvalue 3624 
+sensorvalue 3468 
+sensorvalue 3372 
+sensorvalue 3080 
+sensorvalue 2920 
+sensorvalue 2712 
+sensorvalue 2724 
+sensorvalue 2856 
+sensorvalue 2864 
+sensorvalue 2956 
+sensorvalue 3464 
+sensorvalue 3640 
+sensorvalue 3620 
+sensorvalue 2684 
+sensorvalue 3644 
+sensorvalue 3652 
+sensorvalue 3632 
+sensorvalue 3672 
+sensorvalue 3548 
+sensorvalue 3700 
+sensorvalue 3628 
+sensorvalue 3636 
+sensorvalue 3652 
+sensorvalue 3672 
+sensorvalue 3680 
+sensorvalue 3620 
+sensorvalue 3672 
+sensorvalue 3644 
+sensorvalue 3640 
+sensorvalue 3604 
+sensorvalue 3572 
+sensorvalue 3568 
+sensorvalue 3708 
+sensorvalue 3656 
+sensorvalue 3380 
+sensorvalue 1976 
+sensorvalue 1652 
+sensorvalue 1588 
+sensorvalue 1508 
+sensorvalue 1680 
+sensorvalue 1460 
+sensorvalue 1304 
+sensorvalue 1252 
+sensorvalue 1348 
+sensorvalue 3360 
+sensorvalue 3684 
+sensorvalue 3708 
+sensorvalue 3704 
+sensorvalue 3652 
+sensorvalue 3724 
+sensorvalue 3688 
+sensorvalue 3644 
+sensorvalue 2568 
+sensorvalue 2236 
+sensorvalue 1964 
+sensorvalue 1784 
+sensorvalue 1732 
+sensorvalue 1776 
+sensorvalue 1868 
+sensorvalue 3608 
+sensorvalue 3712 
+sensorvalue 3724 
+sensorvalue 3716 
+sensorvalue 3740 
+sensorvalue 3748 
+sensorvalue 3756 
+sensorvalue 3756 
+sensorvalue 3756 
+sensorvalue 3756 
+sensorvalue 3752 
+sensorvalue 3764 
+sensorvalue 3760 
+sensorvalue 3760 
+sensorvalue 3764 
+sensorvalue 3768 
+sensorvalue 3764 
+sensorvalue 3760 
+sensorvalue 3764 
+sensorvalue 3768 
+sensorvalue 3756 
+sensorvalue 3704 
+sensorvalue 3696 
+sensorvalue 3700 
+sensorvalue 3596 
+sensorvalue 3628 
+sensorvalue 3556 
+sensorvalue 3576 
+sensorvalue 3564 
+sensorvalue 3596 
+sensorvalue 3568 
+sensorvalue 3596 
+sensorvalue 3576 
+sensorvalue 3648 
+sensorvalue 3732 
+sensorvalue 3744 
+sensorvalue 3740 
+sensorvalue 3736 
+sensorvalue 3740 
+sensorvalue 3748 
+sensorvalue 3748 
+sensorvalue 3620 
+sensorvalue 3628 
+sensorvalue 3600 
+sensorvalue 3592 
+sensorvalue 3560 
+sensorvalue 3596 
+sensorvalue 3596 
+sensorvalue 3576 
+sensorvalue 3708 
+sensorvalue 3740 
+sensorvalue 3744 
+sensorvalue 3744 
+sensorvalue 3740 
+sensorvalue 3744 
+sensorvalue 3748 
+sensorvalue 3748 
+sensorvalue 3756 
+^C
+root@quark016b3e:~/labs/ledsensor/bash# cd
+root@quark016b3e:~# Write failed: Broken pipe
+youmnas-MacBook-Pro:~ youmna$ 

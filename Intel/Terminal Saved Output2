@@ -1,0 +1,22 @@
+Last login: Tue Feb 10 16:12:09 on ttys000
+youmnas-MacBook-Pro:~ youmna$ touch toto.txt
+youmnas-MacBook-Pro:~ youmna$ scp toto.txt root@192.168.6.158:~
+toto.txt                                      100%    0     0.0KB/s   00:00    
+youmnas-MacBook-Pro:~ youmna$ mv toto.txt Desktop/
+youmnas-MacBook-Pro:~ youmna$ cd 
+youmnas-MacBook-Pro:~ youmna$ cd Desktop/
+youmnas-MacBook-Pro:Desktop youmna$ ls -l
+total 1296
+-rw-r--r--@ 1 youmna  staff  114425 Feb  6 09:59 Screen Shot 2015-02-06 at 9.56.59 AM.png
+-rw-r--r--@ 1 youmna  staff  545440 Feb  9 20:51 Screen Shot 2015-02-09 at 8.51.59 PM.png
+drwxr-xr-x  8 youmna  staff     272 Feb  8 08:42 semster 6
+-rw-r--r--  1 youmna  staff       0 Feb 10 16:39 toto.txt
+youmnas-MacBook-Pro:Desktop youmna$ scp toto.txt root@192.168.6.158:~
+toto.txt                                      100%    4     0.0KB/s   00:00    
+youmnas-MacBook-Pro:Desktop youmna$ 
+
+
+
+
+
+
